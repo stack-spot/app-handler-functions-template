@@ -1,0 +1,20 @@
+name: base-app-ts-template
+description: Base template to work with handler stack
+types:
+  - app-template
+inputs:
+  - label: Project name
+    type: text
+    name: project_name
+    default: project-name
+    global: true
+  - label: Main handler name
+    type: text
+    name: handler_name
+    default: handler-name
+    global: true
+  - label: Defines the location path of the event lambda generated files, by default it is src.
+    type: text
+    name: source_dir
+    default: src
+    required: false
