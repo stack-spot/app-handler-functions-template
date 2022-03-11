@@ -1,0 +1,52 @@
+name: base-app-ts-template
+description: Base template to work with handler stack
+types:
+  - app-template
+inputs:
+  - label: Nome do Projeto
+    type: text
+    name: project_name
+    default: project-name
+    global: true
+  - label: Nome do handler principal
+    type: text
+    name: handler_name
+    default: handler-name
+    global: true
+  - label: Caminho padrão para a localização dos códigos auto gerados das lambdas da stack, o padrão é src.
+    type: text
+    name: source_dir
+    default: src
+    required: false
+  - label: Deseja habilitar o tracing para rastrear melhor os eventos entre as lambdas da stack?
+    type: text
+    name: tracing_enabled
+    default: 'true'
+    required: false
+  - label: Qual linguagem deseja usar para codificar as lambdas da stack?
+    type: text
+    name: runtime_language
+    items:
+      - 'NODEJS_14_X'
+      - 'PYTHON_3_8'
+    default: 'NODEJS_14_X'
+    required: false
+
+hooks:
+  - type: run-script
+    trigger: after-render
+    script: scripts/template-render.py
+
+displayName: Handler Base Template
+
+category: Backend
+
+compatibility:
+  - NodeJS 14.x
+  - CDK 2.x 
+
+about: about.md
+
+usage: usage.md
+
+technologies: [ "Typescript", "CDK" , "EventBridge" ]
