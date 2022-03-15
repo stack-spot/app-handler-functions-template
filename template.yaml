@@ -32,10 +32,18 @@ inputs:
     default: 'NODEJS_14_X'
     required: false
 
-hooks:
-  - type: run-script
-    trigger: after-render
-    script: scripts/template-render.py
+# hooks:
+#   - type: run
+#     trigger: after-render
+#     commands:
+#       - cd {{project_name}}/infra
+#       - npm install
+#       - npm run build
+#       - npm run cdk synth
+#       - npm run build-app
+  # - type: run-script
+  #   trigger: after-render
+  #   script: scripts/template-render.py
 
 displayName: Handler Base Template
 
