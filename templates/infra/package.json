@@ -8,7 +8,7 @@
   "types": "lib/{{handler_name}}-handler-stack.d.ts",
   "scripts": {
     "build": "tsc",
-    "build-app": "cd src && npm run build && cd ..",
+    "build-app": "cd ../{{source_dir}} && npm run build && cd ..",
     "watch": "tsc -w",
     "lint": "eslint --ext=ts .",
     "format": "prettier --check .",

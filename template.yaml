@@ -23,7 +23,7 @@ inputs:
     name: tracing_enabled
     default: 'true'
     required: false
-  - label: Qual linguagem deseja usar para codificar as lambdas da stack?
+  - label: Qual linguagem deseja usar para codificar as lambdas da stack? (Python ainda é experimental)
     type: text
     name: runtime_language
     items:
@@ -39,7 +39,7 @@ hooks:
 
 displayName: Handler Base Template
 
-category: Backend
+category: backend
 
 compatibility:
   - NodeJS 14.x
