@@ -40,7 +40,7 @@
     "typescript": "~4.5.4"
   },
   "dependencies": {
-    "@stackspot/cdk-component-handler-core": "^0.2.2",
+    "@stackspot/cdk-component-handler-core": "^0.2.4",
     "@types/aws-lambda": "^8.10.92",
     "@types/nunjucks": "^3.2.0",
     "aws-cdk-lib": "2.12.0",
