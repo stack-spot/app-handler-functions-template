@@ -7,6 +7,7 @@
   "main": "lib/{{handler_name}}-handler-stack.js",
   "types": "lib/{{handler_name}}-handler-stack.d.ts",
   "scripts": {
+    "init": "tsc --init",
     "build": "tsc",
     "build-app": "cd ../{{source_dir}} && npm run build && cd ..",
     "setup": "(npm install && npm run build && npm run cdk synth && npm run format:fix) && (cd ../{{source_dir}} && npm install)",

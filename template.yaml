@@ -1,4 +1,4 @@
-name: base-app-ts-template
+name: base-app-handler-ts-template
 description: Base template to work with handler stack
 types:
   - app-template

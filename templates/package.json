@@ -2,7 +2,7 @@
   "name": "helper-{{project_name}}",
   "version": "0.0.1",
   "scripts": {
-    "infra:build:cdk": "cd infra && npm install && npm run build && npm run cdk synth",
+    "infra:build:cdk": "cd infra && npm install && npm run init && npm run build && npm run cdk synth",
     "infra:format:fix": "cd infra && npm run format:fix",
     "source:setup": "cd src && npm install && npm run build"
   }
