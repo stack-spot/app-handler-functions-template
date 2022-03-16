@@ -2,9 +2,8 @@
   "name": "helper-{{project_name}}",
   "version": "0.0.1",
   "scripts": {
-    "infra:install:handlercore": "cd infra && npm install && npm install @stackspot/cdk-component-handler-core@^0.2.3",
+    "infra:build:cdk": "cd infra && npm install && npm run build && npm run cdk synth",
     "infra:format:fix": "cd infra && npm run format:fix",
-    "infra:build:cdk": "cd infra && npm run build && npm run cdk synth",
-    "source:setup": "cd {{source_dir}} && npm install && npm run build"
+    "source:setup": "cd src && npm install && npm run build"
   }
 }
