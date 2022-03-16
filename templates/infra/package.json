@@ -9,7 +9,7 @@
   "scripts": {
     "build": "tsc",
     "build-app": "cd ../{{source_dir}} && npm run build && cd ..",
-    "setup": "(cd infra && npm install && npm run build && npm run cdk synth) && (cd {{source_dir}} && npm install)",
+    "setup": "(npm install && npm run build && npm run cdk synth && npm run format:fix) && (cd ../{{source_dir}} && npm install)",
     "watch": "tsc -w",
     "lint": "eslint --ext=ts .",
     "format": "prettier --check .",
