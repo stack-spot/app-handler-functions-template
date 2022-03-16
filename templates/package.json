@@ -5,6 +5,6 @@
     "infra:install:handlercore": "cd infra && npm install && npm install @stackspot/cdk-component-handler-core@^0.2.3",
     "infra:format:fix": "cd infra && npm run format:fix",
     "infra:build:cdk": "cd infra && npm run build && npm run cdk synth",
-    "source:setup": "cd {{source_dir}} && npm install && npm install @types/aws-lambda@^8.10.86 && npm run build"
+    "source:setup": "cd {{source_dir}} && npm install && npm run build"
   }
 }
