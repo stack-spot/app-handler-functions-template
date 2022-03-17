@@ -4,6 +4,8 @@
   "scripts": {
     "infra:build:cdk": "cd infra && npm install && npm run init && npm run build && npm run cdk synth",
     "infra:format:fix": "cd infra && npm run format:fix",
-    "source:setup": "cd src && npm install && npm run build"
+    "source:setup": "cd src && npm install && npm run build",
+    "app:deploy": "cd infra && npm run build && npm run cdk synth && npm run cdk deploy",
+    "app:deploy:local": "cd infra && npm run build && npm run local synth && npm run local deploy"
   }
 }
