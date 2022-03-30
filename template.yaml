@@ -31,16 +31,20 @@ inputs:
       - 'PYTHON_3_8'
     default: 'NODEJS_14_X'
     required: false
-
-# hooks:
-#   - type: run
-#     trigger: after-render
-#     commands:
-#       - cd {{project_name}}/infra
-#       - npm install
-#       - npm run build
-#       - npm run cdk synth
-#       - npm run build-app
+  # - type: run
+  #   trigger: after-render
+  #   mac:
+  #     - npm run infra:build:cdk
+  #     - npm run infra:format:fix
+  #     - npm run source:setup
+  #   linux:
+  #     - npm run infra:build:cdk
+  #     - npm run infra:format:fix
+  #     - npm run source:setup
+  #   windows:
+  #     - cmd /c npm run infra:build:cdk
+  #     - cmd /c npm run infra:format:fix
+  #     - cmd /c npm run source:setup
   # - type: run-script
   #   trigger: after-render
   #   script: scripts/template-render.py
